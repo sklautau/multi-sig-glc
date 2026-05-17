@@ -78,7 +78,7 @@ def main():
     # The scripts assume the configuration file is named dataset_folders.json
     # Hence, we copy the configuration file for IEB-3 dataset to the expected name:
     shutil.copyfile(r'./multimodal_dataset_folders_ieb3.json',
-                    r'./dataset_folders.json')
+                    r'./multimodal_dataset_folders.json')
 
     # run the pipeline:
     signal_processing()
