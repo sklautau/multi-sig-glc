@@ -1,16 +1,10 @@
 """
 PPG signal processing
-Não-morfologicas - IMF intrincic
-C:\git_sofis\ppg\IEB_1-hu\features\extract_imf_features.py
+Non-morphological - IMF intrinsic mode functions, energy-based features, entropy-based features, etc.
 
-Morfologicas - notch-independent morphological features - Os da Sofia, não depende do notch
-C:\git_sofis\ppg\IEB_1-hu\features\features_filt.py
+Morphological - notch-independent morphological features
 
-Morfologica - pulse-based, depends on notch
-C:\git_sofis\ppg\helper\pulse_features.py
-
-Tem outras:
-Energia...
+Morphological - pulse-based, depends on notch
 
 
 """
@@ -36,7 +30,7 @@ from signal_processing.cross_features import safe_mean, safe_std
 from signal_processing.ppg_quality import estimate_sqi_neurokit_tm
 from signal_processing.ppg_quality import estimate_sqi_custom_version
 from signal_processing.ppg_quality import estimate_single_sqi_value
-from signal_processing.ppg_features_by_ufsc import extract_features_from_average_pulse
+# from signal_processing.ppg_features_by_ufsc import extract_features_from_average_pulse
 
 
 # ======================================================
