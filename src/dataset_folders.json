@@ -1,0 +1,8 @@
+{
+  "DATASET_FILE": "..\\datasets\\dataset_ieb_1\\ieb_1_dataset.csv",
+  "GENERATED_WAVEFORMS_PATH": "..\\output_ieb1\\waveforms",
+  "SEGMENTS_PATH": "..\\output_ieb1\\segments",
+  "EVENTS_PATH": "..\\output_ieb1\\events",
+  "MACHINE_LEARNING_PATH": "..\\output_ieb1\\ml",
+  "PPG_FS": 60
+}
