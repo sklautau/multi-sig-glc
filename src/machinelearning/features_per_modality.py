@@ -195,7 +195,7 @@ if __name__ == "__main__":
     }
 
     # Create a DatasetConfig instance
-    dataset_config_file = "dataset_folders.json"
+    dataset_config_file = "multimodal_dataset_folders.json"
     datasetConfig = DatasetConfig(dataset_config_file)
 
     # Load segments information
