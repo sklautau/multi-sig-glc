@@ -213,6 +213,8 @@ def nested_cv_grouped(
             "model": model_name,
             "rmse_mean": np.mean([m["rmse"] for m in fold_metrics]),
             "rmse_std": np.std([m["rmse"] for m in fold_metrics]),
+            "mae_mean": np.mean([m["mae"] for m in fold_metrics]),
+            "mae_std": np.std([m["mae"] for m in fold_metrics]),
         })
 
     return pd.DataFrame(results).sort_values(by="rmse_mean")

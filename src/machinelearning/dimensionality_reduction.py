@@ -29,6 +29,7 @@ def run_dimensionality_reduction(
     # 1. Load data
     # ==============================
     datasetConfig = DatasetConfig(DATASET_CONFIG_FILE)
+    output_dir = datasetConfig.get_dataset_machine_learning_path()
 
     input_file_name = os.path.join(
         datasetConfig.get_dataset_machine_learning_path(), INPUT_FEATURES_FILE)
@@ -145,7 +146,7 @@ def run_dimensionality_reduction(
             plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left', fontsize=8)
 
     plt.tight_layout()
-    plt.savefig('comparison_methods_corrected.png',
+    plt.savefig(os.path.join(output_dir, 'comparison_methods.png'),
                 dpi=300, bbox_inches='tight')
     plt.show()
 
@@ -188,7 +189,8 @@ def run_dimensionality_reduction(
     plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left', fontsize=8)
 
     plt.tight_layout()
-    plt.savefig('embedding_with_glc_labels.png', dpi=300, bbox_inches='tight')
+    plt.savefig(os.path.join(output_dir, 'embedding_with_glc_labels.png'),
+                dpi=300, bbox_inches='tight')
     plt.show()
 
 
