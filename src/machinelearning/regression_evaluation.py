@@ -348,5 +348,5 @@ def regression_evaluation(modalities: list[str]) -> None:
 # -----------------------------
 if __name__ == "__main__":
     # Choose list among modalities = ["ppg_", "ecg_", "bioimp_"]
-    modalities = ["ppg_"]
+    modalities = ["ppg_", "ecg_", "bioimp_"]
     regression_evaluation(modalities)
