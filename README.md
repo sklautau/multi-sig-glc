@@ -8,6 +8,7 @@ This work was approved by the Ethics in Research with Humans Committee at UFSC, 
    ```
    git clone https://github.com/sklautau/multi-sig-glc.git
    ```
+   Or download this project as a ZIP file.
 2) Create a Python environment with the packages in src/requirements.txt
 3) Set the Python path to this repository's src folder with:
    ```
